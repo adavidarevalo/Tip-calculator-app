@@ -1,0 +1,127 @@
+h2{
+  text-transform: uppercase;
+  width: 60px;
+  margin: 10px auto;
+  color: #29a3ae;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 22px;
+}
+section{
+  background: white;
+  width: 85%;
+  border-radius: 25px;
+  padding: 23px;
+  margin: 0 auto;
+  max-width: 700px;
+  animation: fadeIn 1s both;
+  div{
+    form{
+      label{
+        font-size: 1rem;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #05484e;
+      }
+      div{
+        margin-block: 15px 20px;
+        background: #f4fbfb;
+        width: 91%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-radius: 5px;
+        &:active,
+        &:focus {
+          outline: #2cbdaa solid 2px;
+        }
+        p{
+            margin: 0px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #a1bebe;
+        }
+        img{
+          width: 15px;
+        }
+        input{
+          background: none;
+          border: none;
+          width: 100%;
+          outline: none;
+          text-align: end;
+          text-align: end;
+          color: #05484e;
+          font-size: 1.3rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+          &::placeholder{
+            color: #a1bebe;
+          }
+        }
+      }
+    }
+    .ButtonsContainer {
+      width: 100%;
+      margin: 0px auto;
+      margin-bottom: 25px;
+      h3 {
+        font-size: 1rem;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #05484e;
+      }
+      div{
+        display: flex;
+        flex-wrap: wrap;
+        button,
+        input {
+          min-width: 50px;
+          width: 100%;
+          max-width: 75px;
+          margin-inline: 7px;
+          font-size: 1.1rem;
+          padding: 7px;
+          margin-bottom: 15px;
+          background: #05484e;
+          border: none;
+          color: white;
+          border-radius: 3px;
+          &:active,
+          &:hover {
+            background: #03272a;
+          }
+        }
+        input{
+          background: #f4fbfb;
+          max-width: 63px;
+          color: #05484e;
+          text-align: end;
+        &:active,
+        &:focus {
+          outline: #2cbdaa solid 2px;
+        }
+          &::placeholder{
+            color: #a1bebe;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+}
+ @keyframes fadeIn {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ }

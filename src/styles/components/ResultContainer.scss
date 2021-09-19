@@ -1,0 +1,50 @@
+.resultContainer {
+  background: #05484e;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    p{
+      width: 110px;
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 2px;
+      span{
+        color: #c3e3e3;
+        font-size: .9rem;
+      }
+    }
+    .resultValue{
+      justify-content: flex-end;
+      color: #2cbdaa;
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .last-child {
+    margin-bottom: 70px;
+  }
+  button{
+    width: 90%;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    background: #2cbdaa;
+    color: #ffffff;
+    position: absolute;
+    bottom: 40px;
+    &:active,
+    &:hover{
+      background: #196d62;
+    }
+  }
+}
