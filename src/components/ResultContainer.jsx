@@ -11,7 +11,7 @@ const ResultContainer = ({Result, setResetButton}) =>{
       </div>
       <div class="last-child">
         <p>Total <span>/ person</span></p>
-        <p class="resultValue"><span>$</span>{(total === 0) ? "0.00" : total}</p>
+        <p class="resultValue"><span>$</span>{(total === 0) ? "0" : total}</p>
       </div>
       <button
       onClick={()=> setResetButton(true)}
